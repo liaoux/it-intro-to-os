@@ -1,0 +1,13 @@
+instructors:
+  - name: Ilias TOUGUI
+    profile_pic: /_images/pp/ilias-logo.png
+    webpage: https://www.liaou.xyz/
+  #- name: Minerva McGonagall
+  #  profile_pic: /_images/pp/mcgonagall.jpg
+
+teaching_assistants:
+  - name: Yassine HAMZAOUI
+    profile_pic: /_images/pp/yassine.png
+
+  - name: Youssef CHAKIR
+    profile_pic: /_images/pp/youssef.png

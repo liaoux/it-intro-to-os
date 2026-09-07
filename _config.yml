@@ -1,0 +1,51 @@
+# Site settings
+course_name: Systèmes d’Exploitation
+course_description: "Ce cours d'introduction aux systèmes d'exploitation couvre les concepts fondamentaux nécessaires à la compréhension du fonctionnement d'un système informatique moderne. Il débute par les commandes UNIX de base et les services essentiels d'un SE, puis aborde les appels système qui servent d'interface entre les programmes utilisateur et le noyau. Les étudiants explorent ensuite la gestion des processus, la sécurité et l'administration des utilisateurs, ainsi que l'organisation et le fonctionnement des systèmes de fichiers. La gestion de la mémoire est également traitée en profondeur, et le cours se termine par la programmation Shell en Bash, permettant aux apprenants d'automatiser des tâches et d'interagir efficacement avec le système."
+course_semester: "Automne 2026"
+
+baseurl: "/it-intro-to-os" # the subpath of your site, e.g. /blog/
+url: "http://liaoux.github.io/" # the base hostname & protocol for your site
+
+schoolname: "Université Internationale de Rabat"
+schoolurl: "https://uir.ac.ma"
+# twitter_username: username 
+
+address: |
+    Ecole Supérieure d'Informatique et du Numérique (ESIN)
+    UIR - Maroc
+
+# Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
+# google_analytics: UA-XXXXXXXX-X
+
+### Do not change the followings unless you know what you are doing ###
+
+# Build settings
+markdown: kramdown
+
+# Other options
+permalink: blog/:year/:month/:title
+excerpt_separator: "<!--more-->"
+
+include: ['_images', '_css']
+exclude: ['develop']
+
+dateformat: "%A %d %b %Y"
+
+future: true
+collections:
+    events:
+        output: true
+    lectures:
+        output: true
+    assignments:
+        output: true
+    announcements:
+        output: false
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "assignments"
+    values:
+      layout: "assignment"

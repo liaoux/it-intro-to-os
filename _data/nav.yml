@@ -1,0 +1,28 @@
+items:
+- url: /
+  name: Accueil
+  icon_class: fa fa-home fa-lg
+
+- url: /schedule/
+  name: Planification
+  icon_class: fas fa-calendar-alt
+
+- url: /environment/
+  name: Environnement
+  icon_class: fas fa-laptop-code
+
+- url: /lectures/
+  name: Cours
+  icon_class: fas fa-book-reader
+
+- url: /assignments/
+  name: TPs
+  icon_class: fas fa-user-graduate
+
+- url: /project/
+  name: Projet
+  icon_class: fas fa-industry
+
+- url: /materials/
+  name: Références
+  icon_class: fas fa-book
