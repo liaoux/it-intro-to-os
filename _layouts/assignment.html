@@ -31,9 +31,12 @@ title: page.title
     </p>
 
     
-    <div style="color: gray;">
-      {{ include.event.objectif }}
-    </div>
+    {% if page.objectif %}
+      <div class="assignment-objective">
+        <strong>Objectif :</strong>
+        {{ page.objectif }}
+      </div>
+    {% endif %}
     
   </div>
 
