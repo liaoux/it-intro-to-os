@@ -4,54 +4,52 @@ title: Projet
 permalink: /project/
 ---
 
-<!--
-Le projet de fin de semestre est **obligatoire**. Il remplace le CC et compte pour **25 % de la note finale**.
+Le **projet semestriel** est un travail **intégrateur** qui mobilise les trois résultats d'apprentissage du module (CO1, CO2, CO3). Il compte pour **20 % de la note finale** (dans le contrôle continu) et se conclut par une **soutenance orale**.
 
-<br>
+## Les cinq projets
 
-## Règles importantes
+Les projets varient en complexité : la note maximale atteignable dépend du projet choisi. Une soumission **parfaite** d'un projet plus difficile dépasse toujours une soumission parfaite d'un projet plus facile.
 
-- **Taille des groupes :** maximum **4 étudiants**.
-- **Les groupes doivent être du même TP.** Le mélange des sections n'est **pas autorisé**.
-- **Absence le jour de la soutenance = zéro.** Aucune soutenance de rattrapage.
-- La soutenance a lieu pendant votre **séance de TP habituelle**.
+| # | Projet | Difficulté | Note max |
+|---|---|---|---|
+| 1 | `watchdog` — Audit & forensics | Intermediate | 16/20 |
+| 2 | `automon` — Monitoring & automation | Intermediate | 17/20 |
+| 3 | `opsh` — Mini-shell (en Python) | Challenging | 18/20 |
+| 4 | `ocsh` — Mini-shell (en C) | Challenging | 19/20 |
+| 5 | `esinos` — Mini-noyau simulé | Advanced | 20/20 |
 
-<br>
+<br/>
+<a href="{{ site.baseurl }}/static_files/project/project.pdf" style="display:inline-block;background-color:#2e4057;color:#ffffff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:bold;">Télécharger la description complète (PDF)</a>
 
-## Description du projet
+## Règles
 
-*La description détaillée du projet sera publiée ici en milieu de semestre.*
+- Groupes de **2 étudiants maximum 4 étudiants maximum**.
+- **Les membres d'un groupe doivent appartenir au même groupe de TP.** Le mélange des sections n'est pas autorisé.
+- Choix du projet via un **formulaire Microsoft** envoyé par l'enseignant.
+- Langages : **Bash**, **C** et **Python** (vus en première année).
 
-Le projet est un travail **intégrateur** qui couvre les trois résultats d'apprentissage (CO1, CO2, CO3). Il vous demandera de :
+## Formation des groupes
 
-- Utiliser la ligne de commande Linux et les outils système
-- Écrire des programmes C utilisant les appels système POSIX
-- Implémenter ou observer la gestion des processus et l'ordonnancement
-- Créer un script shell automatisant une tâche réelle
-- Appliquer les outils de traitement de texte (grep, sed, awk)
+Pour constituer votre groupe (4 étudiants maximum, membres du même groupe de TP), remplissez le formulaire :
 
-<br>
-
-## Livrables
-
-Soumettez un dépôt **GitHub** contenant :
-
-- `code/` – code source et scripts bien documentés
-- `report.pdf` – 2 à 4 pages couvrant votre approche, les difficultés rencontrées, les résultats et les liens avec le cours
-- `README.md` – instructions pour exécuter votre projet
-
-Le dépôt doit être **public**, et le lien soumis avant votre créneau de soutenance.
-
-<br>
+<a href="https://forms.cloud.microsoft/r/Cxvf3whWn3" style="display:inline-block;background-color:#7a9e3b;color:#ffffff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:bold;">Formulaire de formation des groupes</a>
 
 ## Soutenance
 
-La soutenance a lieu pendant votre **séance de TP habituelle**. Elle est **obligatoire** — l'absence entraîne un zéro sans rattrapage.
+La soutenance a lieu pendant votre **séance de TP habituelle**. Elle est **obligatoire** — l'absence entraîne un **zéro** sans rattrapage.
 
-Pendant la soutenance, vous devrez :
+- Durée : **15 minutes maximum** par groupe.
+- **4 cartes tirées au hasard : 2 CODE et 2 CONCEPT.**
+- Les 2 étudiants « CODE » expliquent le code ; les 2 « CONCEPT » expliquent les concepts.
+- L'attribution est aléatoire : **chaque membre doit maîtriser les deux volets**.
 
-- **Présenter votre travail** — expliquer votre approche, les difficultés rencontrées et les résultats obtenus.
-- **Démontrer votre code en direct** — exécuter vos programmes et scripts du début à la fin.
-- **Répondre aux questions** — chaque membre du groupe sera interrogé individuellement sur l'implémentation et les concepts sous-jacents.
+## Livrables
 
--->
+Une fois le projet terminé, soumettez le lien de votre dépôt **GitHub public** avant la date limite, contenant :
+
+- `code/` — code source et scripts bien commentés
+- `report.pdf` — 2 à 4 pages : approche, difficultés, résultats et liens avec le cours
+- `README.md` — description du projet et instructions d'exécution
+- `demo.mp4` — vidéo de démonstration, **caméra ouverte**, présentant le travail et expliquant le code
+
+<a href="https://forms.cloud.microsoft/r/MuK5gtPx5H" style="display:inline-block;background-color:#754537;color:#ffffff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:bold;">Formulaire de soumission du code</a>
