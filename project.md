@@ -3,6 +3,7 @@ layout: page
 title: Projet
 permalink: /project/
 ---
+<!-- 
 
 Le **projet semestriel** est un travail **intégrateur** qui mobilise les trois résultats d'apprentissage du module (CO1, CO2, CO3). Il compte pour **20 % de la note finale** (dans le contrôle continu) et se conclut par une **soutenance orale**.
 
@@ -23,7 +24,7 @@ Les projets varient en complexité : la note maximale atteignable dépend du pro
 
 ## Règles
 
-- Groupes de **2 étudiants maximum 4 étudiants maximum**.
+- Groupes de **2 étudiants minimum 4 étudiants maximum**.
 - **Les membres d'un groupe doivent appartenir au même groupe de TP.** Le mélange des sections n'est pas autorisé.
 - Choix du projet via un **formulaire Microsoft** envoyé par l'enseignant.
 - Langages : **Bash**, **C** et **Python** (vus en première année).
@@ -53,3 +54,5 @@ Une fois le projet terminé, soumettez le lien de votre dépôt **GitHub public*
 - `demo.mp4` — vidéo de démonstration, **caméra ouverte**, présentant le travail et expliquant le code
 
 <a href="https://forms.cloud.microsoft/r/MuK5gtPx5H" style="display:inline-block;background-color:#754537;color:#ffffff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:bold;">Formulaire de soumission du code</a>
+
+-->
