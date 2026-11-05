@@ -4,7 +4,7 @@ title: Projet
 permalink: /project/
 ---
 
-Le **projet semestriel** est un travail **intégrateur** qui mobilise les trois résultats d'apprentissage du module (CO1, CO2, CO3). Il compte pour **20 % de la note finale** et se conclut par une **soutenance orale**.
+Le **projet semestriel** est un travail **intégrateur** qui mobilise les trois résultats d'apprentissage du module (CO1, CO2, CO3). Il compte pour **20 % de la note finale** et se conclut par une **soutenance orale**
 
 ## Les quatre projets
 
@@ -18,7 +18,7 @@ Les projets varient en complexité : la note maximale atteignable dépend du pro
 | 4 | `esinos` — Mini-noyau simulé | Advanced | 20/20 |
 
 <br/>
-<a href="{{ site.baseurl }}/static_files/project/project.pdf" style="display:inline-block;background-color:#2e4057;color:#ffffff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:bold;">Télécharger la description complète (PDF)</a>
+<a href="{{ site.baseurl }}/static_files/project/main.pdf" style="display:inline-block;background-color:#2e4057;color:#ffffff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:bold;">Télécharger la description complète (PDF)</a>
 
 ## Règles
 
