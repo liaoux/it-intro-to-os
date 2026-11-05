@@ -3,35 +3,33 @@ layout: page
 title: Projet
 permalink: /project/
 ---
-<!-- 
 
-Le **projet semestriel** est un travail **intégrateur** qui mobilise les trois résultats d'apprentissage du module (CO1, CO2, CO3). Il compte pour **20 % de la note finale** (dans le contrôle continu) et se conclut par une **soutenance orale**.
+Le **projet semestriel** est un travail **intégrateur** qui mobilise les trois résultats d'apprentissage du module (CO1, CO2, CO3). Il compte pour **20 % de la note finale** et se conclut par une **soutenance orale**.
 
-## Les cinq projets
+## Les quatre projets
 
 Les projets varient en complexité : la note maximale atteignable dépend du projet choisi. Une soumission **parfaite** d'un projet plus difficile dépasse toujours une soumission parfaite d'un projet plus facile.
 
 | # | Projet | Difficulté | Note max |
 |---|---|---|---|
-| 1 | `watchdog` — Audit & forensics | Intermediate | 16/20 |
-| 2 | `automon` — Monitoring & automation | Intermediate | 17/20 |
-| 3 | `opsh` — Mini-shell (en Python) | Challenging | 18/20 |
-| 4 | `ocsh` — Mini-shell (en C) | Challenging | 19/20 |
-| 5 | `esinos` — Mini-noyau simulé | Advanced | 20/20 |
+| 1 | `sysdash` — Tableau de bord système | Intermediate | 17/20 |
+| 2 | `opsh` — Mini-shell (en Python) | Challenging | 18/20 |
+| 3 | `ocsh` — Mini-shell (en C) | Challenging | 19/20 |
+| 4 | `esinos` — Mini-noyau simulé | Advanced | 20/20 |
 
 <br/>
 <a href="{{ site.baseurl }}/static_files/project/project.pdf" style="display:inline-block;background-color:#2e4057;color:#ffffff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:bold;">Télécharger la description complète (PDF)</a>
 
 ## Règles
 
-- Groupes de **2 étudiants minimum 4 étudiants maximum**.
+- Groupes de **3 étudiants minimum 4 étudiants maximum**.
 - **Les membres d'un groupe doivent appartenir au même groupe de TP.** Le mélange des sections n'est pas autorisé.
 - Choix du projet via un **formulaire Microsoft** envoyé par l'enseignant.
 - Langages : **Bash**, **C** et **Python** (vus en première année).
 
 ## Formation des groupes
 
-Pour constituer votre groupe (4 étudiants maximum, membres du même groupe de TP), remplissez le formulaire :
+Pour constituer votre groupe (3 étudiants minimum 4 étudiants maximum, membres du même groupe de TP), remplissez le formulaire :
 
 <a href="https://forms.cloud.microsoft/r/Cxvf3whWn3" style="display:inline-block;background-color:#7a9e3b;color:#ffffff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:bold;">Formulaire de formation des groupes</a>
 
@@ -54,5 +52,3 @@ Une fois le projet terminé, soumettez le lien de votre dépôt **GitHub public*
 - `demo.mp4` — vidéo de démonstration, **caméra ouverte**, présentant le travail et expliquant le code
 
 <a href="https://forms.cloud.microsoft/r/MuK5gtPx5H" style="display:inline-block;background-color:#754537;color:#ffffff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:bold;">Formulaire de soumission du code</a>
-
--->
