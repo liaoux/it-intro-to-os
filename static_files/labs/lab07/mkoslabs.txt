@@ -1,0 +1,98 @@
+#!/usr/bin/env bash
+# =============================================================================
+# mkoslabs — préparer l'environnement d'un TP Systèmes d’Exploitation
+#
+# Usage : mkoslabs [-i] NN [paquet...]
+#   NN   : numéro du TP sur deux chiffres (ex. 07)
+#   -i   : installe les paquets manquants (macOS : brew, Linux : apt)
+#   -h   : affiche l'aide
+#
+# Exemple : mkoslabs -i 07
+#
+# Portable : bash 3.2+, curl, unzip, apt ou brew.
+# =============================================================================
+
+SITE="${MKOSLABS_SITE:-https://liaoux.github.io/it-intro-to-os/static_files/labs}"
+
+usage() {
+    printf 'Usage : %s [-i] NN [paquet...]\n' "$(basename "$0")"
+    printf '  NN  : numéro du TP sur deux chiffres (ex. 07)\n'
+    printf '  -i  : installe les paquets manquants (brew ou apt)\n'
+    printf '  -h  : affiche cette aide\n'
+    printf 'Exemple : mkoslabs -i 07\n'
+}
+
+INSTALL=0
+while getopts ":ih" opt; do
+    case "$opt" in
+        i) INSTALL=1 ;;
+        h) usage; exit 0 ;;
+        :) printf 'Option -%s : argument manquant\n' "$OPTARG" >&2; usage; exit 1 ;;
+        \?) printf 'Option invalide : -%s\n' "$OPTARG" >&2; usage; exit 1 ;;
+    esac
+done
+shift $((OPTIND - 1))
+
+if [ $# -eq 0 ]; then
+    printf 'Numéro de TP manquant.\n'
+    usage
+    exit 1
+fi
+
+LAB="$1"
+shift
+
+case "$LAB" in
+    [0-9][0-9]) ;;
+    *) printf 'Numéro invalide : %s (attendu : deux chiffres, ex. 07)\n' "$LAB"
+       exit 1 ;;
+esac
+
+OSNAME="$(uname -s)"
+if [ "$OSNAME" = "Darwin" ]; then
+    PM="brew install"
+else
+    PM="sudo apt install -y"
+fi
+
+if [ "$INSTALL" = "1" ]; then
+    NEED_UPDATE=0
+    for pkg in unzip curl "$@"; do
+        if command -v "$pkg" >/dev/null 2>&1; then
+            printf '%s : déjà présent\n' "$pkg"
+        else
+            if [ "$OSNAME" != "Darwin" ] && [ "$NEED_UPDATE" = "0" ]; then
+                sudo apt update || exit 1
+                NEED_UPDATE=1
+            fi
+            printf 'Installation de %s...\n' "$pkg"
+            $PM "$pkg" || printf 'Échec pour %s\n' "$pkg"
+        fi
+    done
+elif [ $# -gt 0 ]; then
+    printf 'Paquets ignorés (ajoutez -i) : %s\n' "$*"
+fi
+
+for tool in curl unzip; do
+    if ! command -v "$tool" >/dev/null 2>&1; then
+        printf 'Outil manquant : %s (relancez avec -i)\n' "$tool"
+        exit 1
+    fi
+done
+
+mkdir -p "$HOME/oslabs/lab$LAB" || exit 1
+cd "$HOME/oslabs/lab$LAB" || exit 1
+printf 'Dossier de travail : %s\n' "$(pwd)"
+
+ZIP="scripts_lab$LAB.zip"
+URL="$SITE/lab$LAB/$ZIP"
+if ! curl -fO "$URL"; then
+    printf 'Téléchargement impossible : %s\n' "$URL"
+    exit 1
+fi
+
+unzip -o "$ZIP" || exit 1
+chmod +x ./*.sh 2>/dev/null || true
+ls -l
+printf 'TP%s prêt dans %s\n' "$LAB" "$(pwd)"
+exit 0
