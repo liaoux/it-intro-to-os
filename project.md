@@ -31,7 +31,7 @@ Les projets varient en complexité : la note maximale atteignable dépend du pro
 
 Pour constituer votre groupe (3 étudiants minimum 4 étudiants maximum, membres du même groupe de TP), remplissez le formulaire :
 
-<a href="https://forms.cloud.microsoft/r/Cxvf3whWn3" style="display:inline-block;background-color:#7a9e3b;color:#ffffff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:bold;">Formulaire de formation des groupes</a>
+<a href="https://forms.cloud.microsoft/r/BQ0GWG2ubL" style="display:inline-block;background-color:#7a9e3b;color:#ffffff;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:bold;">Formulaire de formation des groupes</a>
 
 ## Soutenance
 
